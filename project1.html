@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>fitgroove</title>
+  <style>
+    body {
+      text-align: center;
+      background-image: linear-gradient(to top, #ceafc6 0%, #b0cace 100%);
+      padding: 20px; 
+      position: relative; 
+    }
+
+    header {
+      color: #f65282;
+      font-size: 45px;
+      font-weight: bold;
+      font-family: "Pacifico", cursive;
+    }
+
+    h2 {
+      color: #f65282;
+    }
+
+    img.left {
+      border-radius: 30px;
+      width: 250px;
+      position: absolute; 
+      left: 10px; 
+      top: 50%; 
+      transform: translateY(-50%); 
+    } 
+
+    img.right {
+      border-radius: 30px;
+      width: 400px;
+      float: right;
+      margin-bottom: 20px;
+    }
+
+    .first {
+      margin: 0 auto;
+      max-width: 600px;
+      color: white;
+      font-size: 19px;
+      font-family: "Pacifico", cursive;
+    }
+
+    .second {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 17px;
+      font-family: "Pacifico", cursive;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+    button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+      }
+  </style>
+</head>
+<body>
+  <header>Diepsloot Fitgroove
+    <br>🤼‍♂️</header>
+  <h2>
+    <em>Your Body Is Your Equipment</em>
+  </h2>
+  <hr />
+  <div class="container">
+    <div class="first">
+      <p>
+        <strong>Welcome to Diepsloot Fitgroove!</strong>
+        <br />Elevate your fitness journey with fitgroove, where we believe in transforming
+        lives through the power of movement. Our aerobics classes offer an
+        exhilarating way to improve your fitness, boost your mood, and embrace a
+        healthier lifestyle.
+      </p>
+      <span>
+        <a href="https://www.facebook.com/profile.php?id=100072099781484&mibextid=JRoKGi" target="_blank">👉 Check out our facebook page 👈</a>
+      </span>
+    </div>
+    <div>
+      <img src="https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/293468788_180356994377626_5511996805279265725_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF6sNQODha-DU7xitXdT8blQ3I1avCvC8lDcjVq8K8LyRRZa4pXxI9PZWtbGwj3sckHND9xTa1ia1JDwML8subV&_nc_ohc=fj4efYFUfngAX-Xslnn&_nc_ht=scontent-jnb2-1.xx&oh=00_AfAtuijPsq56qyA-Fxzz5QopJH6xBgyFDUUc38RTTmmVvA&oe=65F56EF5" alt="two people standing" class="left" />
+    </div>
+    <div class="second">
+      <p>
+        Whether you're a beginner or a seasoned fitness enthusiast,
+        <br />our classes are designed to accommodate everyone.
+        <br>Led by experienced and passionate coaches, 
+        <br>our sessions are not only effective but also fun-filled and energizing.
+      </p>
+    </div>
+  </div>
+  <hr />
+  <button>Join Our Classes Today!</button>
+  <img src="https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/346657134_913594256592384_4582439508392596955_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGM7QzbEKXVTf3-Ig1gU3gF4T9ebM6XH-HhP15szpcf4f8MUVBlN5-ZAClNeVsoPhiIb955WntyvDJoVekug1M5&_nc_ohc=e0DfV7vy-AIAX8xpuOe&_nc_ht=scontent-jnb2-1.xx&oh=00_AfDZKZtwbStZTw2R7M-roZq0BfX37Zf-fdPfR3YLzbbs2w&oe=65F4C3DF" alt="people dancing" class="right" style="bottom: 50px; right: 50px;" />
+<script>
+    function classes() {
+    let name = prompt("What is your Name?");
+    let contact = prompt("Enter your phone number");
+    let newheading = document.querySelector("header");
+
+    
+    if (name.trim() === ""|| contact.trim() === "") {
+        newheading.innerHTML = "Your details are incomplete!";
+    } else {
+        newheading.innerHTML = "Hi " + name + "! We'll get back to you shortly!";
+    }
+}
+let joinButton = document.querySelector("button");
+    joinButton.addEventListener("click", classes);
+</script>
+</body>
+</html>
